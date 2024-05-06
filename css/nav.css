@@ -1,0 +1,49 @@
+.navbar {
+  box-shadow: 0 0 5px grey;
+  margin-bottom: 30px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav_link {
+  position: relative;
+}
+.navDropdown {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: 10;
+  background-color: white;
+  list-style-type: none;
+  padding: 0;
+  width: max-content;
+  transition: all ease 1.2s;
+  box-shadow: 0 4px 5px grey;
+  border-radius: 4px;
+  z-index: 99;
+}
+
+.navDropdown .dropLi {
+  text-align: center;
+  transition: all ease 0.5s;
+}
+.navDropdown .dropLi a {
+  text-decoration: none;
+  font-size: 15px;
+  transition: all ease 0.5s;
+  color: grey;
+  display: block;
+  padding: 8px 15px;
+}
+.nav_link:hover .navDropdown {
+  opacity: 1;
+  visibility: visible;
+}
+.navDropdown .dropLi:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.navDropdown .dropLi:hover a {
+  color: white;
+}
